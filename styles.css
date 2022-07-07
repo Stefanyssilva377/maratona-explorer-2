@@ -4,7 +4,9 @@ html {
   --text-color: #00082F;
   --moon: inline;
 }
-
+ul {
+  padding: 0;
+}
 a {
   text-decoration: none;
 }
