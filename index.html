@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketLinks</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        let altenarCor = true
+        $('.btnAlterarCor').click(function(e){
+          if(altenarCor){
+            $('body').addClass('dark');
+          }else{
+             $('body').removeClass('dark');
+          }
+          altenarCor = !altenarCor
+        })
+      })
+    </script>
+  </head>
+
+
+  <body>
+    <div class="lua"> 
+        <svg class="moon btnAlterarCor" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        </svg>
+
+        <svg class="sun btnAlterarCor" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+        </svg>
+    </div>
+    <div class="container">
+      <img 
+      class="avatar"
+      src="https://github.com/Stefanyssilva377.png"
+      alt="imagem de perfil">
+      <h1> Stefany Silva </h1>
+      <p class="username">@silvastefany </p>
+
+      <ul>
+      <li> 
+        <a href="https://github.com/Stefanyssilva377" 
+        target="_blank">🐱GitHub</a>
+      </li>
+      <li>
+      <a href="https://linkedin.com/in/stefany-silva-ba2667174/"
+      target="_blank">🙍‍♀️Linkedin</a>
+      </li>
+      <li>
+      <a href="https://instagram.com/stefanysilva1607" 
+      target="_blank">📸instagram</a> 
+      </li>
+      <li>
+        <a href="https://facebook.com/profile.php?id=100007937135066"
+        target="_blank">🙋‍♀️facebook</a>
+      </li>
+      </ul>
+
+      <footer>Feito com ❤️ pela
+       <a href="https://rocketseat.com.br" target="_blank">
+       Rocketseat</a>
+      </footer>
+
+
+    </div>
+  </body>
+</html>
