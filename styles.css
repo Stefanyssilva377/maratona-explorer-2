@@ -13,11 +13,13 @@ body{
 background:var(--bg-color);
 color: var(--text-color);
 font-family: 'Roboto', sans-serif;
+transition: 1s;
 }
 
 body.dark{
   --bg-color: rgb(0, 0, 0);
   --text-color: rgb(255, 255, 255);
+  transition: 1s;
 }
 
 .dark {
